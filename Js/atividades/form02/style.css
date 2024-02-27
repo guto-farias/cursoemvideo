@@ -1,0 +1,62 @@
+body{
+    background-color: blanchedalmond;
+}
+
+header{
+    font: bold 22pt Arial;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+section{
+    background-color: rgb(67, 67, 64);
+    color: white;
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+    border: 2px white;
+}
+
+p{
+    color: white;
+    font: normal 12pt Arial;
+}
+
+#form{
+    font: normal 14pt Arial;
+    display: flex;
+    flex-direction: column;
+}
+
+#form label,
+#form input{
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 7px 7px 7px 7px;
+    border-radius: 4px;
+}
+
+#res{
+    margin-top: 20px;
+    font: normal 12pt Arial;
+}
+
+select{
+    margin-bottom: 5px;
+    margin-top: 7px;
+    padding: 7px 7px 7px 7px;
+    border-radius: 4px;
+}
+
+#btn{
+    margin-top:7px;
+    margin-bottom:10px;
+    padding: 7px 7px 7px 7px;
+    border-radius: 4px;
+}
+
+footer{
+    text-align: center;
+    font: bold 16pt Arial;
+    margin-top: 25px;
+}

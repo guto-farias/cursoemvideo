@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe02</title>
+
+    <style>
+        body{
+            background-color: rgb(194, 62, 62);
+            color: rgb(131, 127, 127);
+            font: normal 16pt Arial;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>DOM introdução</h1>
+    <p><br>Document <strong>Object</strong> Model <br></p>
+
+    <div id = 'msg'>DIV</div>
+
+    <br>
+
+    <script>
+        var body = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] //primeiro paragrafo a aparecer
+        var div = window.document.getElementById('msg')
+
+        body.style.backgroundColor = 'white'
+
+        div.style.backgroundColor = 'black'
+        div.style.color = "white"
+        div.innerText = 'Mudando conteúdo.'
+
+        p1.style.color = 'black' //pega o primeiro p pela tag[0]
+        window.document.write(p1.innerText) // pega apenas texto
+        window.document.write(p1.innerHTML) //pega tags junto
+    </script>
+</body>
+</html>

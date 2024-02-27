@@ -1,0 +1,8 @@
+usando var simples, alguns comandos popup
+
+formatação dinheiro** ex 004
+
+operadores gerais
+
+operador ternário (if simples) ex 005
+

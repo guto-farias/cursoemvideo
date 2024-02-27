@@ -1,0 +1,40 @@
+body{
+    background-color: blanchedalmond;
+}
+
+header{
+    font: bold 22pt Arial;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+section{
+    background-color: rgb(67, 67, 64);
+    color: white;
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+    border: 2px white;
+}
+
+#form{
+    font: normal 14pt Arial;
+    display: flex;
+    flex-direction: column;
+}
+
+#form label,
+#form input{
+    margin-bottom: 10px;
+}
+
+#res{
+    margin-top: 20px;
+    font: normal 12pt Arial;
+}
+
+footer{
+    text-align: center;
+    font: bold 16pt Arial;
+    margin-top: 25px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+<style>
+.calculator {
+ text-align: center;
+ font-size: 20px;
+}
+
+.button {
+ padding: 20px;
+ margin: 5px;
+ font-size: 20px;
+ cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="calculator">
+ <input type="text" id="display" readonly>
+ <br>
+ <button class="button" onclick="addToDisplay('7')">7</button>
+ <button class="button" onclick="addToDisplay('8')">8</button>
+ <button class="button" onclick="addToDisplay('9')">9</button>
+ <button class="button" onclick="addToDisplay('*')">*</button>
+ <br>
+ <button class="button" onclick="addToDisplay('4')">4</button>
+ <button class="button" onclick="addToDisplay('5')">5</button>
+ <button class="button" onclick="addToDisplay('6')">6</button>
+ <button class="button" onclick="addToDisplay('-')">-</button>
+ <br>
+ <button class="button" onclick="addToDisplay('1')">1</button>
+ <button class="button" onclick="addToDisplay('2')">2</button>
+ <button class="button" onclick="addToDisplay('3')">3</button>
+ <button class="button" onclick="addToDisplay('+')">+</button>
+ <br>
+ <button class="button" onclick="calculateResult()">=</button>
+ <button class="button" onclick="addToDisplay('0')">0</button>
+ <button class="button" onclick="clearDisplay()">C</button>
+</div>
+
+<script>
+let display = document.getElementById('display');
+let calculation = '';
+
+function addToDisplay(value) {
+ calculation += value;
+ display.value = calculation;
+}
+
+function calculateResult() {
+ try {
+    display.value = eval(calculation);
+    calculation = '';
+ } catch(err) {
+    alert('Invalid calculation');
+    calculation = '';
+    display.value = '';
+ }
+}
+
+function clearDisplay() {
+ calculation = '';
+ display.value = '';
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe04</title>
+
+    <style>
+        body{
+            background-color: bisque;
+        }
+
+        p{
+            font: normal 14pt Arial;
+        }
+
+        h1{
+            font: bold 22pt Arial;
+            background-color: brown;
+            color: aliceblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        input{
+            font: italic 14pt Arial;
+            padding: 10px;
+        }
+
+        #btn1{
+            background-color: aliceblue;
+            color: black;
+            font: bold 15pt Arial;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>INFORME SEU PAÍS DE ORIGEM</h1>
+    <input type="char" id="txt">
+    <input type="button" value="Validar" id="btn1" onclick="valida()">
+
+    <div id="res"></div>
+
+    <script>
+        function valida(){
+            var countryInput = document.querySelector('input#txt')
+            var res = document.querySelector('div#res')
+
+            var country = countryInput.value.toLowerCase() // converte pra minúsculas
+
+            if(country === "brasil"){
+                res.innerHTML = '<p>Você é Brasileiro, que azar!</p>'
+            } else {
+                res.innerHTML = `<p>Você não é brasileiro.</p>`
+          
+            }
+        }
+    </script>
+
+</body>
+</html>
